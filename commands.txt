@@ -1,0 +1,17 @@
+scrapy [command]
+
+scrapy startproject [project_name] -> stating a new project by given name
+scrapy crawl [crawler name] -> should run it where scrapy.cfg exists.
+scrapy crawl [crawler name] -o [file_name].json export data to json or csv
+xpath:
+
+//a[@starts-with(@href, 'https')]
+//a[@ends-with(@href, 'https')]
+//a[@contains(@href, 'https')]
+//a[@contains(text(), 'https')]
+//ul[@id='items']/li[position()=1 or position()=4]
+//ul[@id='items']/li[position()=1 or position()=last()]
+//ul[@id='items']/li[position()>1]
+//p[@id='unique']/parent::node() # parent func select tag parent 
+//p[@id='unique']/ancestor::node() # grandparent of elements
+//div[@class='intro']/following::node() # get al the tags that are after div
